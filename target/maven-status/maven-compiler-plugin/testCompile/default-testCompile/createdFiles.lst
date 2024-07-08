@@ -1,9 +1,0 @@
-br/com/fiap/clientes/service/ClienteServiceTest$buscarTodosClientes.class
-br/com/fiap/clientes/service/ClienteServiceTest$buscarClientePorNome.class
-br/com/fiap/clientes/service/ClienteServiceTest.class
-br/com/fiap/clientes/service/ClienteServiceTest$buscarClientePorId.class
-br/com/fiap/clientes/service/ClienteServiceTest$atualizarCliente.class
-br/com/fiap/clientes/dados/ClienteDados.class
-br/com/fiap/clientes/service/ClienteServiceTest$adicionarCliente.class
-br/com/fiap/clientes/service/ClienteServiceTest$deletarCliente.class
-br/com/fiap/clientes/controller/ClienteControllerTest.class
