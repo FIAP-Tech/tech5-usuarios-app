@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: br.com.fiap.clientes.service.ClienteServiceIntegrationTest$adicionarCliente
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in br.com.fiap.clientes.service.ClienteServiceIntegrationTest$adicionarCliente
+br.com.fiap.clientes.service.ClienteServiceIntegrationTest$adicionarCliente.deveAdicionarCliente_ComSucesso -- Time elapsed: 0.010 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size: 1 but was: 9 in:
+[UsuarioDto(id=3, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=4, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=6, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=7, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=9, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=10, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=12, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=13, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36),
+    UsuarioDto(id=15, nome=Bruno Silveira, email=bruno.silveira@gmail.com, telefone=(11) 89345-5687, endereco=null, dataNascimento=1990-12-01, cpf=156.683.240-36)]
+	at br.com.fiap.clientes.service.ClienteServiceIntegrationTest$adicionarCliente.deveAdicionarCliente_ComSucesso(ClienteServiceIntegrationTest.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

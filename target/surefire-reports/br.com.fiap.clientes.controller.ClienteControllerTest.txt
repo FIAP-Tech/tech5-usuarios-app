@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.fiap.clientes.controller.ClienteControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.940 s -- in br.com.fiap.clientes.controller.ClienteControllerTest

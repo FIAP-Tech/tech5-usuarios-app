@@ -1,0 +1,17 @@
+br/com/fiap/clientes/domain/exception/ErroConverterObjetoParaJsonException.class
+br/com/fiap/clientes/domain/model/Usuario.class
+br/com/fiap/clientes/api/model/UsuarioDto.class
+br/com/fiap/clientes/config/AppConfig.class
+br/com/fiap/clientes/api/exceptionhandler/ErrorMessage.class
+br/com/fiap/clientes/config/SwaggerConfig.class
+br/com/fiap/clientes/domain/model/Endereco.class
+br/com/fiap/clientes/api/controller/UsuarioController.class
+br/com/fiap/clientes/domain/service/UsuarioService.class
+br/com/fiap/clientes/config/MessageConfig.class
+br/com/fiap/clientes/domain/repository/UsuarioRepository.class
+br/com/fiap/clientes/domain/enums/Estado.class
+br/com/fiap/clientes/domain/exception/UsuarioNaoEncontradoException.class
+br/com/fiap/clientes/api/exceptionhandler/CustomExceptionHandler.class
+br/com/fiap/clientes/api/model/UsuarioDto$UsuarioDtoBuilder.class
+br/com/fiap/clientes/UsuariosApplication.class
+br/com/fiap/clientes/domain/model/Usuario$UsuarioBuilder.class
