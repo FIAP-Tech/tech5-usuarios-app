@@ -5,7 +5,6 @@ import br.com.fiap.usuarios.config.MessageConfig;
 import br.com.fiap.usuarios.domain.exception.UsuarioNaoEncontradoException;
 import br.com.fiap.usuarios.domain.model.Usuario;
 import br.com.fiap.usuarios.domain.repository.UsuarioRepository;
-import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
