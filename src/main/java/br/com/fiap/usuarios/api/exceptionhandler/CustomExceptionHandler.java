@@ -1,5 +1,6 @@
 package br.com.fiap.usuarios.api.exceptionhandler;
 
+import br.com.fiap.usuarios.domain.exception.SenhasNaoCombinamException;
 import br.com.fiap.usuarios.domain.exception.UsuarioNaoEncontradoException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
@@ -42,6 +43,18 @@ public class CustomExceptionHandler {
     @ExceptionHandler(DateTimeParseException.class)
     public ResponseEntity<ErrorMessage> dateTimeParseException(DateTimeParseException e, HttpServletRequest request){
         var status = HttpStatus.BAD_REQUEST;
+
+        errorMessage.setTimestamp(LocalDateTime.now());
+        errorMessage.setStatus(status.value());
+        errorMessage.setMessage(e.getMessage());
+        errorMessage.setPath(request.getRequestURI());
+
+        return ResponseEntity.status(status).body(this.errorMessage);
+    }
+
+    @ExceptionHandler(SenhasNaoCombinamException.class)
+    public ResponseEntity<ErrorMessage> SenhasNaoCombinamException(SenhasNaoCombinamException e, HttpServletRequest request){
+        var status = HttpStatus.INTERNAL_SERVER_ERROR;
 
         errorMessage.setTimestamp(LocalDateTime.now());
         errorMessage.setStatus(status.value());

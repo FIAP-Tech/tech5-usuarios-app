@@ -3,12 +3,12 @@ package br.com.fiap.usuarios.api.controller;
 import br.com.fiap.usuarios.api.model.AutenticarDto;
 import br.com.fiap.usuarios.api.model.TokenDto;
 import br.com.fiap.usuarios.api.model.UsuarioDto;
+import br.com.fiap.usuarios.domain.exception.SenhasNaoCombinamException;
 import br.com.fiap.usuarios.domain.service.JwtService;
 import br.com.fiap.usuarios.domain.service.UsuarioService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -45,8 +45,12 @@ public class UsuarioController {
 
     @PostMapping("/registrar")
     @ResponseStatus(HttpStatus.CREATED)
-    public void add(@RequestBody @Valid UsuarioDto clienteDto) {
-        service.add(clienteDto);
+    public void add(@RequestBody @Valid UsuarioDto usuarioDto) {
+        if(!usuarioDto.getPassword().equals(usuarioDto.getPasswordConfirmation())) {
+            throw new SenhasNaoCombinamException("Senhas enviadas não são iguais");
+        }
+
+        service.add(usuarioDto);
     }
 
     @PostMapping("/autenticar")
@@ -62,8 +66,8 @@ public class UsuarioController {
     }
 
     @PutMapping("/{id}")
-    public UsuarioDto update(@RequestBody @Valid UsuarioDto clienteDto, @PathVariable("id") Long id){
-        return service.update(clienteDto, id);
+    public UsuarioDto update(@RequestBody @Valid UsuarioDto usuarioDto, @PathVariable("id") Long id){
+        return service.update(usuarioDto, id);
     }
 
     @DeleteMapping("/{id}")

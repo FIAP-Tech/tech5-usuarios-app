@@ -26,5 +26,7 @@ public class UsuarioDto {
 
     private String password;
 
+    private String passwordConfirmation;
+
     private Role role;
 }
