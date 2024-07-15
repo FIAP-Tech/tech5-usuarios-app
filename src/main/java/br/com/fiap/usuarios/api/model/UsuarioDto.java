@@ -1,8 +1,6 @@
 package br.com.fiap.usuarios.api.model;
 
 import br.com.fiap.usuarios.domain.enums.Role;
-import br.com.fiap.usuarios.domain.model.Endereco;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
